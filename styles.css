@@ -48,3 +48,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+ul{
+    display: flex;
+    list-style-type: none;
+   margin: 0;
+  padding: 90;
+  background-color: #b20a0a;
+  height: 55px;
+}
+
+ul li a{
+display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
