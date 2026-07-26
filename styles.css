@@ -1,3 +1,4 @@
+
 /* styles.css - Simple beginner CSS styles */
 
 /* Body - set background and text color */
@@ -8,7 +9,21 @@ body {
   margin: 0;
   padding: 0;
 }
+ul{
+    display: flex;
+    justify-content: space-between; 
+  align-items: center;
+  background-color: #b00000;
+  list-style-type:none ;
+}
 
+ul li a{
+display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
 /* Buttons - red color */
 button {
   background-color: #d62828;
@@ -18,8 +33,14 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+.nav{
+    position:fixed;
+}
 
-
+.nav-links {
+  display: flex;
+  gap: 20px
+}
 
 /* Button hover effect - darker red when you hover */
 button:hover {
@@ -42,18 +63,58 @@ a:hover {
   text-decoration: underline;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
-   margin: 0;
-  padding: 90;
-  background-color: #b20a0a;
-  height: 55px;
+.login{
+background-color: #f1f1f1;
+color: #a71f1f;
+margin-left:auto;
+text-align: center;
+padding:10px 20px;
 }
 
-ul li a{
-display: block;
-  color: #f1f1f1;
-  padding: 14px 16px;
-  text-decoration: none;
+img{
+  width: 400px;
+  height: 251px;
+  margin: 0;
+  margin-bottom: 2vh;
+ 
+}
+
+footer{
+     background:  #a71f1f;
+    color:rgb(236, 230, 230);
+    padding: 10px;
+    height: 33px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: center;
+}
+
+thead th {
+  background-color: #b00000;
+  color: #fff;
+}
+
+tbody th {
+  background-color: #333;
+  color: #ffcccc;
+}
+
+tbody td {
+  background-color: #444;
+}
+
+.support{
+text-align: center;
 }
