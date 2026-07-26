@@ -1,0 +1,41 @@
+/* styles.css - Simple beginner CSS styles */
+
+/* Body - set background and text color */
+body {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons - red color */
+button {
+  background-color: #d62828;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect - darker red when you hover */
+button:hover {
+  background-color: #a71f1f;
+}
+
+/* Headings - white text */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+/* Links - light color for visibility */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Links hover - underline on hover */
+a:hover {
+  text-decoration: underline;
+}
