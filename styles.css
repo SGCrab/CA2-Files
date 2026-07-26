@@ -119,3 +119,36 @@ tbody td {
 .support{
 text-align: center;
 }
+#about {
+  padding-bottom: 50px; /* Some padding above the footer */
+}
+
+/* Ensure consistent section spacing */
+#about section {
+  margin-bottom: 40px; 
+}
+
+/* Styling for the section headers and underlines */
+#about h2.about-header,
+#about h2.why-play-header {
+  color: #ffffff;
+  border-bottom: 2px solid #555; /* Subtle underline like the sketch */
+  padding-bottom: 10px;
+  display: inline-block; /* Makes the border stop where the text stops */
+  margin-bottom: 20px;
+}
+
+/* Adjust paragraph readability for the dark background */
+#about p {
+  color: #dddddd;
+  line-height: 1.8; /* Improves readability */
+  max-width: 800px; /* Optional: limits paragraph width so they are easier to read on wide screens */
+  margin-bottom: 0; /* Remove default bottom margin */
+}
+
+/* (Optional) A third heading style, perhaps slightly smaller */
+#about h3.third-header {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
