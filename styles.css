@@ -15,6 +15,7 @@ ul{
   align-items: center;
   background-color: #b00000;
   list-style-type:none ;
+  height: 95px;
 }
 
 ul li a{
@@ -68,7 +69,7 @@ background-color: #f1f1f1;
 color: #a71f1f;
 margin-left:auto;
 text-align: center;
-padding:10px 20px;
+padding: 10px 12px;
 }
 
 img{
@@ -82,10 +83,10 @@ img{
 footer{
      background:  #a71f1f;
     color:rgb(236, 230, 230);
-    padding: 10px;
-    height: 33px;
-    text-align: center;
-    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+    text-align: left;
+    font-size: 20px;
 }
 
 
