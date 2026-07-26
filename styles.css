@@ -19,6 +19,15 @@ button {
   cursor: pointer;
 }
 
+ul{
+    display: flex;
+    list-style-type: none;
+   margin: 0;
+  padding: 0;
+  background-color: #b20a0a;
+
+}
+
 /* Button hover effect - darker red when you hover */
 button:hover {
   background-color: #a71f1f;
