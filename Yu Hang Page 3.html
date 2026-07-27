@@ -1,115 +1,138 @@
-<section id="agents" class="py-5 bg-light">
-  <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Project Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaM5m8QPSYJHlSQ+EMnVJWfIYfI9GGwm+8D1E4h6V9KKXb95Y6G4QRee9v0" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div>
+            <h1 class="h3 mb-1">Project Name</h1>
+            <p class="mb-0">A simple Bootstrap website template for student projects.</p>
+          </div>
+          <nav class="mt-3 mt-md-0">
+            <a class="text-white me-3 text-decoration-none" href="#home">Home</a>
+            <a class="text-white me-3 text-decoration-none" href="#about">About</a>
+            <a class="text-white text-decoration-none" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-    <div class="text-center mb-4">
-      <h2>Agents / Characters</h2>
-      <p class="text-muted">
-        Meet the playable characters in GachaRant. Each agent has their own unique abilities and role.
-      </p>
-    </div>
+    <main>
+        <section id="agents" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Agents</h2>
+                    <p class="text-muted">
+                        Choose your favourite GachaRant character.
+                    </p>
+                </div>
 
-    <!-- Filter Buttons -->
-    <div class="text-center mb-4">
+                <!-- Filter Buttons -->
 
-      <button class="btn btn-primary me-2 filter-btn" data-filter="all">
-        All
-      </button>
+                <div class="text-center mb-4">
 
-      <button class="btn btn-outline-primary me-2 filter-btn" data-filter="Duelist">
-        Duelist
-      </button>
+                    <button class="btn btn-primary filter-btn"
+                    data-filter="all">
+                    All
+                </button>
 
-      <button class="btn btn-outline-primary me-2 filter-btn" data-filter="Controller">
-        Controller
-      </button>
+                <button class="btn btn-outline-primary filter-btn"
+                data-filter="Duelist">
+                Duelist
+            </button>
 
-      <button class="btn btn-outline-primary me-2 filter-btn" data-filter="Sentinel">
+            <button class="btn btn-outline-primary filter-btn"
+            data-filter="Controller">
+            Controller
+        </button>
+
+        <button class="btn btn-outline-primary filter-btn"
+        data-filter="Sentinel">
         Sentinel
-      </button>
+    </button>
+</div>
+<div class="row g-4">
+
+    <!-- Character 1 -->
+
+    <div class="col-md-4 character"
+    data-category="Duelist">
+
+    <div class="card h-100">
+
+        <img src="images/blaze.png"
+        class="card-img-top">
+
+        <div class="card-body">
+
+            <h4>Blaze</h4>
+
+            <p><strong>Health:</strong> 100</p>
+
+            <p><strong>Abilities:</strong></p>
+
+            <ul>
+                <li>Flash Dash</li>
+                <li>Fire Grenade</li>
+                <li>Ultimate: Inferno Storm</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- Character 2 -->
+
+<div class="col-md-4 character"
+data-category="Controller">
+
+<div class="card h-100">
+
+    <img src="images/frost.png"
+    class="card-img-top">
+
+    <div class="card-body">
+
+        <h4>Frost</h4>
+
+        <p><strong>Health:</strong>100</p>
+
+        <p><strong>Abilities:</strong></p>
+
+        <ul>
+
+            <li>Ice Wall</li>
+
+            <li>Slow Field</li>
+
+            <li>Ultimate: Blizzard</li>
+
+        </ul>
 
     </div>
 
-    <div class="row g-4">
+</div>
 
-      <!-- Character 1 -->
-      <div class="col-md-4 character" data-category="Duelist">
-        <div class="card h-100">
+</div>
 
-          <img src="images/blaze.png" class="card-img-top" alt="Blaze">
+</div>
 
-          <div class="card-body">
+</div>
 
-            <h3 class="card-title h5">Blaze</h3>
-
-            <p><strong>Role:</strong> Duelist</p>
-
-            <p><strong>Health:</strong> 100 HP</p>
-
-            <p><strong>Abilities:</strong></p>
-
-            <ul>
-              <li>Flash Dash</li>
-              <li>Fire Grenade</li>
-              <li>Inferno Storm (Ultimate)</li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Character 2 -->
-      <div class="col-md-4 character" data-category="Controller">
-        <div class="card h-100">
-
-          <img src="images/frost.png" class="card-img-top" alt="Frost">
-
-          <div class="card-body">
-
-            <h3 class="card-title h5">Frost</h3>
-
-            <p><strong>Role:</strong> Controller</p>
-
-            <p><strong>Health:</strong> 100 HP</p>
-
-            <p><strong>Abilities:</strong></p>
-
-            <ul>
-              <li>Ice Wall</li>
-              <li>Snow Field</li>
-              <li>Blizzard (Ultimate)</li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Character 3 -->
-      <div class="col-md-4 character" data-category="Sentinel">
-        <div class="card h-100">
-
-          <img src="images/guardian.png" class="card-img-top" alt="Guardian">
-
-          <div class="card-body">
-
-            <h3 class="card-title h5">Guardian</h3>
-
-            <p><strong>Role:</strong> Sentinel</p>
-
-            <p><strong>Health:</strong> 100 HP</p>
-
-            <p><strong>Abilities:</strong></p>
-
-            <ul>
-              <li>Barrier Shield</li>
-              <li>Healing Beacon</li>
-              <li>Fortress (Ultimate)</li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
 </section>
+
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <small>Template built with Bootstrap. Easy to edit and beginner-friendly.</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoLw4Vb2jFnYh5O4i0hZiOWx0nUjEW5LD9p6Yn9+B0wbZ8Q" crossorigin="anonymous"></script>
+  </body>
+</html>
