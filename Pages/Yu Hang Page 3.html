@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+      <!-- Navigation Bar with Logo -->
+  <header>
+    <ul class="nav-bar">
+      <!-- Logo on the left -->
+      <li>
+        <a href="NathanPage12.html">
+          <img src="GacharantinvisibleLOGO.png" alt="GACHARANT Logo" class="nav-logo">
+        </a>
+      </li>
+      
+      <!-- Nav items pushed to the far right -->
+      <li><a href="NathanPage12.html">Home</a></li>
+      <li><a href="#game-info">Game Info</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#support">Support</a></li>
+      <li><a href="#socials">Socials</a></li>
+      <li><a href="#about">About Us</a></li>
+
+      <!-- Login Dropdown Button -->
+      <li class="ms-2">
+        <div class="dropdown">
+          <button class="login btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item text-dark" href="NathanPage10.html">Code Redemption</a></li>
+            <li><a class="dropdown-item text-dark" href="NathanPage11.html">Account Stats</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <main>
+        <section id="agents" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Agents</h2>
+                    <p class="text-muted">
+                        Choose your favourite GachaRant character.
+                    </p>
+                </div>
+
+                <!-- Filter Buttons -->
+
+                <div class="text-center mb-4">
+
+                    <button class="btn btn-primary filter-btn"
+                    data-filter="all">
+                    All
+                </button>
+
+                <button class="btn btn-outline-primary filter-btn"
+                data-filter="Duelist">
+                Duelist
+            </button>
+
+            <button class="btn btn-outline-primary filter-btn"
+            data-filter="Controller">
+            Controller
+        </button>
+
+        <button class="btn btn-outline-primary filter-btn"
+        data-filter="Sentinel">
+        Sentinel
+    </button>
+</div>
+<div class="row g-4">
+
+    <!-- Character 1 -->
+
+    <div class="col-md-4 character"
+    data-category="Duelist">
+
+    <div class="card h-100">
+
+        <img src="images/blaze.png"
+        class="card-img-top">
+
+        <div class="card-body">
+
+            <h4>Blaze</h4>
+
+            <p><strong>Health:</strong> 100</p>
+
+            <p><strong>Abilities:</strong></p>
+
+            <ul>
+                <li>Flash Dash</li>
+                <li>Fire Grenade</li>
+                <li>Ultimate: Inferno Storm</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- Character 2 -->
+
+<div class="col-md-4 character"
+data-category="Controller">
+
+<div class="card h-100">
+
+    <img src="images/frost.png"
+    class="card-img-top">
+
+    <div class="card-body">
+
+        <h4>Frost</h4>
+
+        <p><strong>Health:</strong>100</p>
+
+        <p><strong>Abilities:</strong></p>
+
+        <ul>
+
+            <li>Ice Wall</li>
+
+            <li>Slow Field</li>
+
+            <li>Ultimate: Blizzard</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Sticky Footer -->
+  <footer>
+    Microslop Game Studios © 2026 
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
