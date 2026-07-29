@@ -166,3 +166,13 @@ text-align: center;
 .dropdown-toggle::after {
   display: flexbox;            /* Optional: hide the caret icon if you prefer */
 }
+
+a .border {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a:hover .border {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
