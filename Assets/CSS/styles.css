@@ -37,6 +37,11 @@ button {
 .nav{
     position:fixed;
 }
+.nav-logo {
+  height: 60px;
+  width: auto;
+  margin-right: 40px; 
+}
 
 .nav-links {
   display: flex;
