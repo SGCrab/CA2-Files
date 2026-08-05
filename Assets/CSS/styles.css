@@ -318,3 +318,51 @@ tbody td {
     flex-direction: column;
     justify-content: center;
 }
+
+/* ===============================
+   AGENTS PAGE
+================================ */
+
+#agents {
+    background-color: #f8f9fa;
+    padding-top: 140px;   /* leave room for navbar */
+    padding-bottom: 60px;
+}
+
+#agents h2,
+#agents h3,
+#agents h4 {
+    color: #212529;
+}
+
+#agents p,
+#agents li {
+    color: #495057;
+}
+
+#agents .card {
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+#agents .btn-primary{
+    background:#b00000;
+    border-color:#b00000;
+}
+
+#agents .btn-primary:hover{
+    background:#8f0000;
+}
+
+#agents .btn-outline-primary{
+    color:#b00000;
+    border-color:#b00000;
+}
+
+#agents .btn-outline-primary:hover{
+    background:#b00000;
+    color:white;
+}
+#agents .card-img-top{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
