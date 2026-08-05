@@ -358,9 +358,11 @@ tbody td {
 .carousel-control-next-icon {
     filter: invert(100%);
 }
-
-#agents .card-img-top{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+/* Character Cards */
+.character .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 10px;
 }
