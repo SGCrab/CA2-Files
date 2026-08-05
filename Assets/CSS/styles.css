@@ -1,191 +1,193 @@
+/* ===========================
+   GLOBAL
+=========================== */
 
-/* Body - set background and text color */
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-
-    color: white;
-    font-family: Arial, sans-serif;
-
-    background-image:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
-        url("../Images/Background/BackgroundImage.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Navigation */
-/* Fixed Navigation */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-body {
-    padding-top: 95px;
-}
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #b00000;
-  list-style-type: none;
-  height: 95px;
-  margin: 0;
-  padding: 0 20px;
-  flex-wrap: wrap;
+html{
+    height:100%;
+    scroll-behavior:smooth;
 }
 
-.nav-bar li a {
-  display: block;
-  color: #f1f1f1;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 22px;
+body{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    padding-top:95px;
+
+    font-family:Arial,sans-serif;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+    url("../Images/Background/BackgroundImage.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
-.nav-logo {
-  height: 60px;
-  width: auto;
-  margin-right: 40px;
+/* ===========================
+   NAVIGATION
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.nav-bar{
+
+    height:95px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    list-style:none;
+
+    background:#a00000;
+
+    padding:0 30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
 
-/* Dropdown menus open on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
+.nav-bar li{
+    list-style:none;
 }
 
-.dropdown-toggle::after {
-  margin-left: 6px;
+.nav-bar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.25s;
 }
 
-.dropdown-menu {
-  background-color: #444444;
-  color: #f1f1f1;
-  border: none;
-  border-radius: 5px;
+.nav-bar a:hover{
+
+    color:#ffd0d0;
+
+    text-decoration:none;
 }
 
-.dropdown-item {
-  color: #f1f1f1;
+.nav-logo{
+
+    height:60px;
+
+    margin-right:30px;
 }
 
-.dropdown-item:hover {
-  background-color: #a71f1f;
-  color: #ffffff;
-}
+.login{
 
-/* Login button styling */
-.login {
-  background-color: #f1f1f1;
-  color: #a71f1f;
-  margin-left: auto;
-  text-align: center;
-  padding: 10px 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    background:white;
 
-/* ----------------------------------------------------------
-   BUTTONS
----------------------------------------------------------- */
-button{
+    color:#a00000;
 
-    background:#d62828;
-
-    transition:.3s;
+    border-radius:6px;
 
     font-weight:bold;
 }
 
-/* Buttons - darker red when you hover */
-button:hover{
+.dropdown-menu{
 
-    background:#ff4040;
+    background:#2b2b2b;
 
-    transform:translateY(-3px);
-
-    box-shadow:0 0 15px rgba(255,0,0,.5);
-}
-/* ----------------------------------------------------------
-   HEADINGS AND LINKS
----------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
+    border:none;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
+.dropdown-item{
+
+    color:white;
 }
 
-a:hover {
-  text-decoration: underline;
+.dropdown-item:hover{
+
+    background:#a00000;
+
+    color:white;
 }
 
-a .border {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.dropdown:hover .dropdown-menu{
+
+    display:block;
 }
 
-a:hover .border {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    flex:1;
+
+    width:100%;
 }
 
-/* ----------------------------------------------------------
-   HERO SECTION (home page intro)
----------------------------------------------------------- */
+/* ===========================
+   HERO
+=========================== */
+
 .hero{
-    min-height:85vh;
+
+    min-height:80vh;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
 }
 
 .hero h1{
+
     font-size:5rem;
-    letter-spacing:5px;
+
+    letter-spacing:6px;
+
     text-shadow:0 0 20px rgba(255,0,0,.6);
 }
 
 .hero p{
+
+    color:#ddd;
+
     font-size:1.3rem;
-    color:#dddddd;
 }
 
 .hero button{
+
     margin-top:25px;
 }
-/* ----------------------------------------------------------
-   FEATURE PANEL (image + text section)
----------------------------------------------------------- */
+
+/* ===========================
+   FEATURE PANEL
+=========================== */
+
 .feature-panel{
 
     max-width:1100px;
 
-    margin:80px auto;
-
-    padding:40px;
+    margin:70px auto;
 
     background:rgba(40,40,40,.92);
+
+    padding:40px;
 
     border-radius:15px;
 
@@ -194,214 +196,93 @@ a:hover .border {
 
 .feature-panel h2{
 
-    font-size:2.5rem;
-
     margin-bottom:20px;
+
+    font-size:2.3rem;
 }
 
 .feature-panel p{
 
-    font-size:18px;
-
-    color:#dddddd;
-
     line-height:1.8;
+
+    color:#ddd;
 }
 
-/* ----------------------------------------------------------
-   IMAGES
----------------------------------------------------------- */
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-  margin-bottom: 2vh;
-  border-radius: 6px;
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+    transition:.3s;
+
+    font-weight:bold;
 }
 
-/* ----------------------------------------------------------
-   FOOTER
----------------------------------------------------------- */
-footer{
-    width:100%;
-    background:#870000;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:80px;
-    border-top:2px solid #d62828;
-}
-/* ----------------------------------------------------------
-   TABLES (used on specs / stats pages)
----------------------------------------------------------- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 15px rgba(255,0,0,.5);
 }
 
-th, td {
-  border: 1px solid #555;
-  padding: 10px;
-  text-align: center;
-}
-
-thead th {
-  background-color: #b00000;
-  color: #fff;
-}
-
-tbody th {
-  background-color: #333;
-  color: #ffcccc;
-}
-
-tbody td {
-  background-color: #444;
-}
-
-/* ----------------------------------------------------------
-   SUPPORT PAGE
----------------------------------------------------------- */
-.support {
-  text-align: center;
-}
-
-/* ----------------------------------------------------------
-   ABOUT PAGE
----------------------------------------------------------- */
-#about {
-  padding-bottom: 50px;
-}
-
-#about section {
-  margin-bottom: 40px;
-}
-
-#about h2.about-header,
-#about h2.why-play-header {
-  color: #ffffff;
-  border-bottom: 2px solid #555;
-  padding-bottom: 10px;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-#about p {
-  color: #dddddd;
-  line-height: 1.8;
-  max-width: 800px;
-  margin-bottom: 0;
-}
-
-#about h3.third-header {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #f1f1f1;
-}
-
-/* ----------------------------------------------------------
-   RESPONSIVE - smaller screens
----------------------------------------------------------- */
-@media (max-width: 768px) {
-  .nav-bar {
-    height: auto;
-    padding: 10px;
-  }
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
-  .hero {
-    padding-top: 220px;
-  }
-  img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-  }
-  .feature-panel .d-flex {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-/* ----------------------------------------------------------
-   Page 2 - Boxes
----------------------------------------------------------- */
-.game-card {
-    height: 100%;
-}
-
-.card-content {
-    min-height: 140px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* ===============================
+/* ===========================
    CONTENT PAGES
-================================ */
+=========================== */
 
-.content-page {
-    background-color: #f8f9fa;
-    padding-top: 140px;
-    padding-bottom: 60px;
+.content-page{
+
+    flex:1;
+
+    padding-top:40px;
+
+    padding-bottom:70px;
+
+    background:#f8f9fa;
 }
 
 .content-page h2,
 .content-page h3,
-.content-page h4,
-.content-page h5 {
-    color: #212529;
+.content-page h4{
+
+    color:#212529;
 }
 
 .content-page p,
-.content-page li {
-    color: #495057;
+.content-page li{
+
+    color:#444;
 }
 
-.content-page .card {
-    box-shadow: 0 5px 15px rgba(0,0,0,.15);
-}
+/* ===========================
+   CARDS
+=========================== */
 
-.content-page .card-img-top {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-/* ===============================
-   WEAPON CAROUSEL
-================================ */
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%);
-}
-/* Character Cards */
-.character .card-img-top {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-    background-color: #f8f9fa;
-    padding: 10px;
-}
-/* hover effects */
 .card{
 
     transition:.3s;
+
+    border:none;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 .card:hover{
 
     transform:translateY(-8px);
 
-    box-shadow:0 10px 30px rgba(255,0,0,.3);
+    box-shadow:0 10px 30px rgba(255,0,0,.35);
 }
-/* img enhancer */
+
+/* ===========================
+   IMAGES
+=========================== */
+
 img{
+
+    max-width:100%;
+
+    height:auto;
 
     border-radius:10px;
 
@@ -411,4 +292,138 @@ img{
 img:hover{
 
     transform:scale(1.03);
+}
+
+.card-img-top{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+/* Character page */
+
+.character .card-img-top{
+
+    height:300px;
+
+    object-fit:contain;
+
+    background:#f8f9fa;
+
+    padding:10px;
+}
+
+/* ===========================
+   TABLES
+=========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+th,
+td{
+
+    border:1px solid #555;
+
+    padding:10px;
+
+    text-align:center;
+}
+
+thead th{
+
+    background:#b00000;
+
+    color:white;
+}
+
+tbody th{
+
+    background:#333;
+
+    color:#ffd5d5;
+}
+
+tbody td{
+
+    background:#444;
+}
+
+/* ===========================
+   CAROUSEL
+=========================== */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+
+    filter:invert(100%);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    width:100%;
+
+    margin-top:auto;
+
+    background:#870000;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    border-top:2px solid #d62828;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.nav-bar{
+
+    height:auto;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    padding:15px;
+}
+
+.nav-bar li{
+
+    margin:5px;
+}
+
+body{
+
+    padding-top:150px;
+}
+
+.hero h1{
+
+    font-size:3rem;
+}
+
+.feature-panel{
+
+    margin:30px 15px;
+}
+
 }
