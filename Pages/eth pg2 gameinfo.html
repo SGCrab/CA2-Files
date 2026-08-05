@@ -1,83 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Info</title>
-  </head>
 
-  <body>
-    <ul>
-      <li>
-        <a href="NathanPage12.html">
-          <img src="../Assets/Images/Logo/Logo.png" alt="GACHARANT Logo" />
-        </a>
-      </li>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+</head>
 
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
-      <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
+<body>
 
-      <li>
-        Support
+    <!-- Navigation Bar -->
+    <header>
+        <ul class="nav-bar">
 
-        <ul>
-          <li><a href="../Pages/josh pg8 specs.html">PC Specs</a></li>
-          <li><a href="../Pages/josh pg 9 support.html">Game Support</a></li>
+            <!-- Logo -->
+            <li>
+                <a href="NathanPage12.html">
+                    <img src="../Assets/Images/Logo/Logo.png"
+                         alt="GACHARANT Logo"
+                         class="nav-logo">
+                </a>
+            </li>
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
+            <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
+
+            <!-- Support -->
+            <li class="ms-2">
+                <div class="dropdown">
+                    <button class="login btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown">
+                        Support
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-dark" href="../Pages/josh pg8 specs.html">PC Specs</a></li>
+                        <li><a class="dropdown-item text-dark" href="../Pages/josh pg 9 support.html">Game Support</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Socials -->
+            <li class="ms-2">
+                <div class="dropdown">
+                    <button class="login btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown">
+                        Socials
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-dark" href="../Pages/Nate pg10 Code Redeem.html">X</a></li>
+                        <li><a class="dropdown-item text-dark" href="../Pages/Nate pg10 Code Redeem.html">Instagram</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- News -->
+            <li class="ms-2">
+                <div class="dropdown">
+                    <button class="login btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown">
+                        News
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-dark" href="../Pages/eth pg6 news.html">Updates</a></li>
+                        <li><a class="dropdown-item text-dark" href="../Pages/josh pg7 events.html">Events</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Login -->
+            <li class="ms-2">
+                <div class="dropdown">
+                    <button class="login btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown">
+                        Login
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item text-dark" href="../Pages/Nate pg10 Code Redeem.html">Code Redemption</a></li>
+                        <li><a class="dropdown-item text-dark" href="../Pages/Nate pg11 AccStats.html">Account Stats</a></li>
+                    </ul>
+                </div>
+            </li>
+
         </ul>
-      </li>
+    </header>
 
-      <li>
-        Socials
+    <!-- Page Title -->
+    <section>
 
-        <ul>
-          <li><a href="../Pages/Nate pg10 Code Redeem.html">X</a></li>
-          <li><a href="../Pages/Nate pg10 Code Redeem.html">Instagram</a></li>
-        </ul>
-      </li>
+        <div class="container text-center mt-5 pt-4">
+            <h1>GACHARANT</h1>
+        </div>
 
-      <li>
-        News
+        <div class="container my-5">
+            <div class="row justify-content-center g-4">
 
-        <ul>
-          <li><a href="../Pages/eth pg6 news.html">Updates</a></li>
-          <li><a href="../Pages/josh pg7 events.html">Events</a></li>
-        </ul>
-      </li>
+                <!-- Characters -->
+                <div class="col-md-4">
+                    <a href="../Pages/yu pg3 characters.html"
+                       class="text-decoration-none text-light d-block">
 
-      <li>
-        Login
+                        <div class="border game-card">
 
-        <ul>
-          <li><a href="../Pages/Nate pg10 Code Redeem.html">Code Redemption</a></li>
-          <li><a href="../Pages/Nate pg11 AccStats.html">Account Stats</a></li>
-        </ul>
-      </li>
-    </ul>
+                            <div class="d-flex align-items-center justify-content-center border-bottom bg-dark">
 
-    <h1>GACHARANT</h1>
+                                <img src="../Assets/Images/Characters/Cinnamon.png"
+                                     alt="Character"
+                                     class="card-img">
 
-    <a href="../Pages/yu pg3 characters.html">
-      <img src="../Assets/Images/Characters/Cinnamon.png" alt="Character" />
+                            </div>
 
-      <h5>Characters</h5>
-      <p>Time to dominate the battlefield, choose your character.</p>
-    </a>
+                            <div class="text-center bg-dark p-3 card-content">
+                                <h5>Characters</h5>
+                                <p>Time to dominate the battlefield, choose your character.</p>
+                            </div>
 
-    <a href="../Pages/yu pg5 weapons.html">
-      <img src="../Assets/Images/Weapons/Phantom.jpg" alt="Weapons" />
+                        </div>
 
-      <h5>Weapons</h5>
-      <p>Make your shots count, choose your pick.</p>
-    </a>
+                    </a>
+                </div>
 
-    <a href="../Pages/yu pg4 maps.html">
-      <img src="../Assets/Images/Maps/Halo map.webp" alt="Maps" />
+                <!-- Weapons -->
+                <div class="col-md-4">
+                    <a href="../Pages/yu pg5 weapons.html"
+                       class="text-decoration-none text-light d-block">
 
-      <h5>Maps</h5>
-      <p>Battle it out in newly and uniquely designed maps.</p>
-    </a>
+                        <div class="border game-card">
 
-    Microslop Game Studios © 2026
-  </body>
+                            <div class="d-flex align-items-center justify-content-center border-bottom bg-dark">
+
+                                <img src="../Assets/Images/Weapons/Phantom.jpg"
+                                     alt="Weapons"
+                                     class="card-img">
+
+                            </div>
+
+                            <div class="text-center bg-dark p-3 card-content">
+                                <h5>Weapons</h5>
+                                <p>Make your shots count, choose your pick.</p>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </div>
+
+                <!-- Maps -->
+                <div class="col-md-4">
+                    <a href="../Pages/yu pg4 maps.html"
+                       class="text-decoration-none text-light d-block">
+
+                        <div class="border game-card">
+
+                            <div class="d-flex align-items-center justify-content-center border-bottom bg-dark">
+
+                                <img src="../Assets/Images/Maps/Halo map.webp"
+                                     alt="Maps"
+                                     class="card-img">
+
+                            </div>
+
+                            <div class="text-center bg-dark p-3 card-content">
+                                <h5>Maps</h5>
+                                <p>Battle it out in newly and uniquely designed maps.</p>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Microslop Game Studios © 2026
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
