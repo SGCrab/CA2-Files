@@ -19,14 +19,17 @@ body {
 }
 
 /* Navigation */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+/* Fixed Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
-
+body {
+    padding-top: 95px;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -99,20 +102,24 @@ body {
 /* ----------------------------------------------------------
    BUTTONS
 ---------------------------------------------------------- */
-button {
-  background-color: #d62828;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+button{
+
+    background:#d62828;
+
+    transition:.3s;
+
+    font-weight:bold;
 }
 
 /* Buttons - darker red when you hover */
-button:hover {
-  background-color: #a71f1f;
-}
+button:hover{
 
+    background:#ff4040;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 15px rgba(255,0,0,.5);
+}
 /* ----------------------------------------------------------
    HEADINGS AND LINKS
 ---------------------------------------------------------- */
@@ -142,48 +149,62 @@ a:hover .border {
 /* ----------------------------------------------------------
    HERO SECTION (home page intro)
 ---------------------------------------------------------- */
-.hero {
-  padding-top: 160px; /* leaves room for the fixed nav */
-  padding-bottom: 60px;
-  text-align: center;
+.hero{
+    min-height:85vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+.hero h1{
+    font-size:5rem;
+    letter-spacing:5px;
+    text-shadow:0 0 20px rgba(255,0,0,.6);
 }
 
-.hero p {
-  font-size: 18px;
-  color: #dddddd;
-  margin-bottom: 25px;
+.hero p{
+    font-size:1.3rem;
+    color:#dddddd;
 }
 
-.platform-text {
-  color: #f1f1f1;
-  font-size: 16px;
-  margin-bottom: 20px;
+.hero button{
+    margin-top:25px;
 }
-
 /* ----------------------------------------------------------
    FEATURE PANEL (image + text section)
 ---------------------------------------------------------- */
-.feature-panel {
-  background-color: #444444;
-  border-radius: 8px;
-  padding: 30px;
-  max-width: 900px;
-  margin: 0 auto 40px;
+.feature-panel{
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+    padding:40px;
+
+    background:rgba(40,40,40,.92);
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
-.feature-panel h2 {
-  margin-bottom: 20px;
+.feature-panel h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
 }
 
-.feature-panel p {
-  color: #dddddd;
-  font-size: 18px;
-  line-height: 1.6;
+.feature-panel p{
+
+    font-size:18px;
+
+    color:#dddddd;
+
+    line-height:1.8;
 }
 
 /* ----------------------------------------------------------
@@ -200,15 +221,22 @@ img {
 /* ----------------------------------------------------------
    FOOTER
 ---------------------------------------------------------- */
-footer {
-    background: #a71f1f;
-    color: rgb(236,230,230);
-    padding: 5px;
-    text-align: left;
-    font-size: 20px;
-    margin-top: auto;
-}
+footer{
 
+    background:#870000;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+    margin-top:80px;
+
+    font-size:15px;
+
+    border-top:2px solid #d62828;
+}
 /* ----------------------------------------------------------
    TABLES (used on specs / stats pages)
 ---------------------------------------------------------- */
@@ -365,4 +393,28 @@ tbody td {
     object-fit: contain;
     background-color: #f8f9fa;
     padding: 10px;
+}
+/* hover effects */
+.card{
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 30px rgba(255,0,0,.3);
+}
+/* img enhancer */
+img{
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+img:hover{
+
+    transform:scale(1.03);
 }
