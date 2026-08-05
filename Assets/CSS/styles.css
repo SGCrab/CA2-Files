@@ -350,3 +350,11 @@ tbody td {
     height: 220px;
     object-fit: cover;
 }
+/* ===============================
+   WEAPON CAROUSEL
+================================ */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
