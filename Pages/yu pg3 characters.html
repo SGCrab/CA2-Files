@@ -3,222 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../Assets/CSS/styles.css">
+    <title>Agents - GACHARANT</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/styles.css">
 </head>
+
 <body>
 
-  <!-- Navigation Bar with Logo -->
-  <header>
-    <ul class="nav-bar">
-      <!-- Logo on the left -->
-      <li>
+<!-- ================= NAVIGATION ================= -->
+<header>
+
+<ul class="nav-bar">
+
+    <li>
         <a href="../index.html">
-          <img src="../Assets/Images/Logo/Logo.png" alt="GACHARANT Logo" class="nav-logo">
+            <img src="../Assets/Images/Logo/Logo.png"
+                 alt="GACHARANT Logo"
+                 class="nav-logo">
         </a>
-      </li>
-      
-      <!-- Nav items pushed to the far right -->
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
-      <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
-      <li class="ms-2">
+    </li>
+
+    <li><a href="../index.html">Home</a></li>
+
+    <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
+
+    <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
+
+    <!-- Support -->
+    <li class="ms-2">
         <div class="dropdown">
-          <button class="login btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Support
-          </button>
-          <ul class="dropdown:hover dropdown-menu">
-            <li><a class="dropdown-item text-dark" href="../Pages/josh pg8 specs.html">PC Specs</a></li>
-            <li><a class="dropdown-item text-dark" href="../Pages/josh pg 9 support.html">Game Support</a></li>
-          </ul>
-        </div>
-      </li>
-       <li class="ms-2">
-        <div class="dropdown">
-          <button class="login btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Socials
-          </button>
-          <ul class="dropdown:hover dropdown-menu">
-            <li><a class="dropdown-item text-dark" href="../Pages/Nate pg10 Code Redeem.html">X</a></li>
-            <li><a class="dropdown-item text-dark" href="../Pages/Nate pg10 Code Redeem.html">Instagram</a></li>
-          </ul>
-        </div>
-      </li>
-      <div class="dropdown">
-          <button class="login btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            News
-          </button>
-          <ul class="dropdown:hover dropdown-menu">
-            <li><a class="dropdown-item text-dark" href="../Pages/eth pg6 news.html">Updates</a></li>
-            <li><a class="dropdown-item text-dark" href="../Pages/josh pg7 events.html">Events</a></li>
-          </ul>
-        </div>
-      </li>
-  
-
-      <!-- Login Dropdown Button -->
-      <li class="ms-2">
-        <div class="dropdown">
-          <button class="login btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Login
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item text-dark" href="../Pages/Nate pg10 Code Redeem.html">Code Redemption</a></li>
-            <li><a class="dropdown-item text-dark" href="../Pages/Nate pg11 AccStats.html">Account Stats</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-    <main>
-        <section id="agents" class="content-page py-5">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2>Agents</h2>
-                    <p class="text-muted">
-                        Choose your favourite GachaRant character.
-                    </p>
-                </div>
-
-                <!-- Filter Buttons -->
-
-                <div class="text-center mb-4">
-
-                    <button class="btn btn-primary filter-btn"
-                    data-filter="all">
-                    All
-                </button>
-
-                <button class="btn btn-outline-primary filter-btn"
-                data-filter="Duelist">
-                Duelist
+            <button class="login btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown">
+                Support
             </button>
 
-            <button class="btn btn-outline-primary filter-btn"
-            data-filter="Controller">
-            Controller
-        </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-dark"
+                    href="../Pages/josh pg8 specs.html">PC Specs</a></li>
 
-        <button class="btn btn-outline-primary filter-btn"
-        data-filter="Sentinel">
-        Sentinel
-    </button>
+                <li><a class="dropdown-item text-dark"
+                    href="../Pages/josh pg 9 support.html">Game Support</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <!-- Socials -->
+    <li class="ms-2">
+        <div class="dropdown">
+            <button class="login btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown">
+                Socials
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-dark" href="#">X</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <!-- News -->
+    <li class="ms-2">
+        <div class="dropdown">
+            <button class="login btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown">
+                News
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-dark"
+                    href="../Pages/eth pg6 news.html">Updates</a></li>
+
+                <li><a class="dropdown-item text-dark"
+                    href="../Pages/josh pg7 events.html">Events</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <!-- Login -->
+    <li class="ms-2">
+        <div class="dropdown">
+            <button class="login btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown">
+                Login
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item text-dark"
+                    href="../Pages/Nate pg10 Code Redeem.html">Code Redemption</a></li>
+
+                <li><a class="dropdown-item text-dark"
+                    href="../Pages/Nate pg11 AccStats.html">Account Stats</a></li>
+            </ul>
+        </div>
+    </li>
+
+</ul>
+
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main>
+
+<section id="agents" class="content-page">
+
+<div class="container">
+
+<div class="text-center mb-5">
+    <h2>Agents</h2>
+    <p class="text-muted">
+        Choose your favourite GachaRant character.
+    </p>
 </div>
+
+<!-- Filter Buttons -->
+
+<div class="text-center mb-4">
+
+<button class="btn btn-primary filter-btn" data-filter="all">
+All
+</button>
+
+<button class="btn btn-outline-primary filter-btn" data-filter="Duelist">
+Duelist
+</button>
+
+<button class="btn btn-outline-primary filter-btn" data-filter="Controller">
+Controller
+</button>
+
+<button class="btn btn-outline-primary filter-btn" data-filter="Sentinel">
+Sentinel
+</button>
+
+</div>
+
 <div class="row g-4">
 
-    <!-- Character 1 -->
+<!-- Character 1 -->
 
-    <div class="col-md-4 character"
-    data-category="Duelist">
+<div class="col-md-4 character" data-category="Duelist">
 
-    <div class="card h-100">
+<div class="card h-100">
 
-        <img src="../Assets/Images/Characters/Phoenix.png"
-        class="card-img-top">
+<img src="../Assets/Images/Characters/Phoenix.png" class="card-img-top">
 
-        <div class="card-body">
+<div class="card-body">
 
-            <h4>Blaze</h4>
+<h4>Blaze</h4>
 
-            <p><strong>Health:</strong> 100</p>
+<p><strong>Health:</strong> 100</p>
 
-            <p><strong>Abilities:</strong></p>
+<p><strong>Abilities:</strong></p>
 
-            <ul>
-                <li>Flash Dash</li>
-                <li>Fire Grenade</li>
-                <li>Ultimate: Inferno Storm</li>
-            </ul>
+<ul>
+<li>Flash Dash</li>
+<li>Fire Grenade</li>
+<li>Ultimate: Inferno Storm</li>
+</ul>
 
-        </div>
-    </div>
 </div>
 
-    <!-- Character 2 -->
-
-    <div class="col-md-4 character"
-    data-category="Controller">
-
-    <div class="card h-100">
-
-        <img src="../Assets/Images/Characters/Spartan.png"
-        class="card-img-top">
-
-        <div class="card-body">
-
-            <h4>Spartan Noble 6</h4>
-
-            <p><strong>Health:</strong> 150</p>
-
-            <p><strong>Abilities:</strong></p>
-
-            <ul>
-                <li>Frag Grenande</li>
-                <li>Energy Shield</li>
-                <li>Ultimate: Nuclear Bomb</li>
-            </ul>
-
-        </div>
-    </div>
 </div>
 
-    <!-- Character 3 -->
+</div>
 
-    <div class="col-md-4 character"
-    data-category="Duelist">
+<!-- Character 2 -->
 
-    <div class="card h-100">
+<div class="col-md-4 character" data-category="Controller">
 
-        <img src="../Assets/Images/Characters/doomslayer.png"
-        class="card-img-top">
+<div class="card h-100">
 
-        <div class="card-body">
+<img src="../Assets/Images/Characters/Spartan.png" class="card-img-top">
 
-            <h4>The DOOM Slayer</h4>
+<div class="card-body">
 
-            <p><strong>Health:</strong> 150</p>
+<h4>Spartan Noble 6</h4>
 
-            <p><strong>Abilities:</strong></p>
+<p><strong>Health:</strong> 150</p>
 
-            <ul>
-                <li>Super Punch</li>
-                <li>Speed Dodge</li>
-                <li>Ultimate: Chainsaw</li>
-            </ul>
+<p><strong>Abilities:</strong></p>
 
-        </div>
-    </div>
+<ul>
+<li>Frag Grenade</li>
+<li>Energy Shield</li>
+<li>Ultimate: Nuclear Bomb</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Character 3 -->
+
+<div class="col-md-4 character" data-category="Duelist">
+
+<div class="card h-100">
+
+<img src="../Assets/Images/Characters/doomslayer.png" class="card-img-top">
+
+<div class="card-body">
+
+<h4>The DOOM Slayer</h4>
+
+<p><strong>Health:</strong> 150</p>
+
+<p><strong>Abilities:</strong></p>
+
+<ul>
+<li>Super Punch</li>
+<li>Speed Dodge</li>
+<li>Ultimate: Chainsaw</li>
+</ul>
+
+</div>
+
+</div>
+
 </div>
 
 <!-- Character 4 -->
 
-<div class="col-md-4 character"
-data-category="Controller">
+<div class="col-md-4 character" data-category="Controller">
 
 <div class="card h-100">
 
-    <img src="../Assets/Images/Characters/Cinnamon.png"
-    class="card-img-top">
+<img src="../Assets/Images/Characters/Cinnamon.png" class="card-img-top">
 
-    <div class="card-body">
+<div class="card-body">
 
-        <h4>Frost</h4>
+<h4>Frost</h4>
 
-        <p><strong>Health:</strong>100</p>
+<p><strong>Health:</strong> 100</p>
 
-        <p><strong>Abilities:</strong></p>
+<p><strong>Abilities:</strong></p>
 
-        <ul>
+<ul>
+<li>Ice Wall</li>
+<li>Slow Field</li>
+<li>Ultimate: Blizzard</li>
+</ul>
 
-            <li>Ice Wall</li>
-
-            <li>Slow Field</li>
-
-            <li>Ultimate: Blizzard</li>
-
-        </ul>
-
-    </div>
+</div>
 
 </div>
 
@@ -229,11 +263,16 @@ data-category="Controller">
 </div>
 
 </section>
-<!-- Sticky Footer -->
-  <footer>
-    Microslop Game Studios © 2026 
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    Microslop Game Studios © 2026
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
