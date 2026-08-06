@@ -646,6 +646,57 @@ body{
 }
 
 /* ===========================
+   GAME INFO CARDS
+=========================== */
+
+.game-card{
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+
+    overflow:hidden;
+
+    background:#212529;
+}
+
+.game-card-media{
+    aspect-ratio:16 / 10;
+
+    flex-shrink:0;
+
+    overflow:hidden;
+}
+
+.game-card .card-img{
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    background:#161616;
+}
+
+.game-card .card-content{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    justify-content:center;
+
+    min-height:145px;
+
+    overflow-wrap:break-word;
+}
+
+.game-card .card-content h5{
+    margin-bottom:12px;
+}
+
+.game-card .card-content p{
+    margin-bottom:0;
+}
+
+/* ===========================
    WEAPONS PAGE
 =========================== */
 
