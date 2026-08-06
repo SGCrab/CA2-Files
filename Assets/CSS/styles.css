@@ -612,3 +612,56 @@ body{
 .filter-btn.btn-danger{
     box-shadow:0 0 15px rgba(214,40,40,.5);
 }
+
+/* ===========================
+   WEAPONS PAGE
+=========================== */
+
+.weapon-card{
+    max-width:520px;
+    margin:auto;
+    background:rgba(30,30,30,.95);
+    border:none;
+    border-radius:15px;
+    color:white;
+    overflow:hidden;
+}
+
+.weapon-card .card-body{
+    padding:25px;
+}
+
+.weapon-card h3{
+    color:#ffffff;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.weapon-card p{
+    color:#dddddd;
+}
+
+.weapon-card img{
+    height:320px;
+    object-fit:contain;
+    background:#1f1f1f;
+    padding:20px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background:white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    filter:invert(1);
+}
+
+#weapons h1{
+    color:white;
+    text-shadow:0 0 15px rgba(255,0,0,.5);
+}
+
+#weapons p{
+    color:#dddddd;
+}
