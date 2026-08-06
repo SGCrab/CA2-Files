@@ -789,3 +789,10 @@ body{
 #maps strong{
     color:white;
 }
+/* ===========================
+   NATE CODEREDEEM PAGE
+=========================== */
+#message {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}

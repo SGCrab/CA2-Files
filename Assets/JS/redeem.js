@@ -18,16 +18,21 @@ redeemForm.addEventListener("submit", function(event) {
     let code = promoCode.value.trim();
 
     // Check if the code exists
-    if (validCodes.includes(code)) {
+if (validCodes.includes(code)) {
 
-        message.textContent = "Successfully redeemed!";
-        message.style.color = "lime";
+    message.textContent = "Successfully redeemed!";
+    message.style.color = "lime";
 
-    } else {
+} else {
 
-        message.textContent = "Code invalid.";
-        message.style.color = "red";
+    message.textContent = "Code invalid.";
+    message.style.color = "red";
 
-    }
+}
+
+// Remove the message after 5 seconds
+setTimeout(function () {
+    message.textContent = "";
+}, 5000);
 
 });
