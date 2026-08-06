@@ -234,12 +234,10 @@ button:hover{
 .content-page{
 
     flex:1;
-
     padding-top:40px;
-
     padding-bottom:70px;
-
-    background:#f8f9fa;
+    background:transparent;
+}
 }
 
 .content-page h2,
@@ -427,4 +425,27 @@ body{
     margin:30px 15px;
 }
 
+}
+#agents .card{
+    background:rgba(35,35,35,.95);
+    border:none;
+    color:white;
+}
+
+#agents .card p,
+#agents .card li{
+    color:#dddddd;
+}
+
+#agents .card h4{
+    color:white;
+}
+
+#agents .card-body{
+    padding:25px;
+}
+
+#agents .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(255,0,0,.35);
 }
