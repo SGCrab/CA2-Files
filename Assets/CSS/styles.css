@@ -139,9 +139,9 @@ header{
 
 .nav-bar a:hover{
 
-    color:#ffd0d0;
+    color:#000000;
 
-    text-decoration:none;
+    text-decoration:underline;
 }
 
 .nav-logo{
