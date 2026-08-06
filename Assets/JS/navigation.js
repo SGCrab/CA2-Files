@@ -3,6 +3,45 @@
 
   headers.forEach((navList, index) => {
     const header = navList.parentElement;
+
+    Array.from(header.children)
+      .filter((item) => item !== navList && item.classList?.contains('dropdown'))
+      .forEach((dropdown) => {
+        const listItem = document.createElement('li');
+        listItem.className = 'ms-2';
+        listItem.append(dropdown);
+        navList.append(listItem);
+      });
+
+    Array.from(navList.children).forEach((item) => {
+      if (item.tagName !== 'LI') {
+        const listItem = document.createElement('li');
+        listItem.className = 'ms-2';
+        item.before(listItem);
+        listItem.append(item);
+      }
+    });
+
+    navList.querySelectorAll('ul.dropdown-menu').forEach((menu) => {
+      menu.classList.remove('dropdown:hover');
+    });
+
+    const socialDropdown = Array.from(navList.querySelectorAll('.dropdown')).find(
+      (dropdown) => dropdown.querySelector('.dropdown-toggle')?.textContent.trim() === 'Socials'
+    );
+
+    const socialMenu = socialDropdown?.querySelector('.dropdown-menu');
+    if (socialMenu) {
+      socialMenu.replaceChildren(...['X - coming soon', 'Instagram - coming soon'].map((label) => {
+        const item = document.createElement('li');
+        const text = document.createElement('span');
+        text.className = 'dropdown-item-text text-white-50';
+        text.textContent = label;
+        item.append(text);
+        return item;
+      }));
+    }
+
     const logoItem = navList.querySelector(':scope > li:first-child');
     const brand = logoItem?.querySelector('a');
     const navigationId = `primary-navigation-${index + 1}`;
