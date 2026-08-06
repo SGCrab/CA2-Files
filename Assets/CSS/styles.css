@@ -139,9 +139,9 @@ header{
 
 .nav-bar a:hover{
 
-    color:#ffd0d0;
+    color:#000000;
 
-    text-decoration:none;
+    text-decoration:underline;
 }
 
 .nav-logo{
@@ -331,7 +331,7 @@ button:hover{
 .content-page h3,
 .content-page h4{
 
-    color:#212529;
+    color: white;
 }
 
 .content-page p,
@@ -390,6 +390,20 @@ img:hover{
 }
 
 /* Character page */
+.character .card{
+    background:#2c2c2c;
+    color:white;
+    border:2px solid #d62828;
+}
+
+.character .card p,
+.character .card li{
+    color:#ddd;
+}
+
+.character .card h4{
+    color:#fff;
+}
 
 .character .card-img-top{
 
@@ -620,4 +634,108 @@ body{
 #agents .card:hover{
     transform:translateY(-8px);
     box-shadow:0 10px 30px rgba(255,0,0,.35);
+}
+
+.filter-btn{
+    margin:5px;
+    min-width:140px;
+    font-weight:bold;
+}
+
+.filter-btn.btn-danger{
+    box-shadow:0 0 15px rgba(214,40,40,.5);
+}
+
+/* ===========================
+   WEAPONS PAGE
+=========================== */
+
+.weapon-card{
+    max-width:520px;
+    margin:auto;
+    background:rgba(30,30,30,.95);
+    border:none;
+    border-radius:15px;
+    color:white;
+    overflow:hidden;
+}
+
+.weapon-card .card-body{
+    padding:25px;
+}
+
+.weapon-card h3{
+    color:#ffffff;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.weapon-card p{
+    color:#dddddd;
+}
+
+.weapon-card img{
+    height:320px;
+    object-fit:contain;
+    background:#1f1f1f;
+    padding:20px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background:white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    filter:invert(1);
+}
+
+#weapons h1{
+    color:white;
+    text-shadow:0 0 15px rgba(255,0,0,.5);
+}
+
+#weapons p{
+    color:#dddddd;
+}
+
+/* ===========================
+   MAPS PAGE
+=========================== */
+
+.map-card{
+    background:rgba(35,35,35,.95);
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    color:white;
+}
+
+.map-card .card-body{
+    padding:25px;
+}
+
+.map-card h3{
+    color:#ffffff;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.map-card p,
+.map-card li{
+    color:#dddddd;
+}
+
+.map-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+#maps h1{
+    color:#fff;
+    text-shadow:0 0 15px rgba(255,0,0,.5);
+}
+
+#maps strong{
+    color:white;
 }
