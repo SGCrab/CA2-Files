@@ -79,10 +79,9 @@ header{
 
 .nav-bar a:hover{
 
-    color:#000000;
+    color:#ffd0d0;
 
-    text-decoration:underline;
-    transition: color 0.2s, border-color 0.2s;
+    text-decoration:none;
 }
 
 .nav-logo{
