@@ -320,7 +320,7 @@ button:hover{
 .content-page h3,
 .content-page h4{
 
-    color:#212529;
+    color: white;
 }
 
 .content-page p,
@@ -379,6 +379,20 @@ img:hover{
 }
 
 /* Character page */
+.character .card{
+    background:#2c2c2c;
+    color:white;
+    border:2px solid #d62828;
+}
+
+.character .card p,
+.character .card li{
+    color:#ddd;
+}
+
+.character .card h4{
+    color:#fff;
+}
 
 .character .card-img-top{
 
@@ -587,4 +601,14 @@ body{
 #agents .card:hover{
     transform:translateY(-8px);
     box-shadow:0 10px 30px rgba(255,0,0,.35);
+}
+
+.filter-btn{
+    margin:5px;
+    min-width:140px;
+    font-weight:bold;
+}
+
+.filter-btn.btn-danger{
+    box-shadow:0 0 15px rgba(214,40,40,.5);
 }
