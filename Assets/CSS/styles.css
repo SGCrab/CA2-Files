@@ -665,3 +665,44 @@ body{
 #weapons p{
     color:#dddddd;
 }
+
+/* ===========================
+   MAPS PAGE
+=========================== */
+
+.map-card{
+    background:rgba(35,35,35,.95);
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    color:white;
+}
+
+.map-card .card-body{
+    padding:25px;
+}
+
+.map-card h3{
+    color:#ffffff;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.map-card p,
+.map-card li{
+    color:#dddddd;
+}
+
+.map-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+#maps h1{
+    color:#fff;
+    text-shadow:0 0 15px rgba(255,0,0,.5);
+}
+
+#maps strong{
+    color:white;
+}
