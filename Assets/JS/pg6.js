@@ -6,13 +6,13 @@ const news = [
     link: "#"
 },
 {
-    image: "../Assets/Images/Background/HaloNews.jpg",
+    image: "../Assets/Images/Background/DoubleXP.png",
     title: "DOUBLE XP WEEKEND",
     text: "Earn double experience and unlock exclusive rewards this weekend.",
     link: "#"
 },
 {
-    image: "../Assets/Images/Background/BackgroundImage.png",
+    image: "../Assets/Images/Maps/Lotus.jpg",
     title: "NEW MAP REVEALED",
     text: "Explore our newest battlefield with hidden paths and exciting objectives.",
     link: "#"
