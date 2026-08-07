@@ -796,3 +796,16 @@ body{
     opacity: 1;
     transition: opacity 0.5s ease;
 }
+
+/* Prevent character images from popping outside the card */
+.character .card {
+    overflow: hidden;
+}
+
+.character .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.character .card-img-top:hover {
+    transform: scale(1.03);
+}
