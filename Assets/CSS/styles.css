@@ -173,6 +173,12 @@ header{
     outline-offset:3px;
 }
 
+.nav-collapse{
+
+    transition: all .3s ease;
+
+}
+
 .dropdown-menu{
 
     background:#2b2b2b;
