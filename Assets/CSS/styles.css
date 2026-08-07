@@ -173,10 +173,9 @@ header{
     outline-offset:3px;
 }
 
-.nav-collapse{
-
-    transition: all .3s ease;
-
+header{
+    position: fixed;
+    z-index: 9999;
 }
 
 .dropdown-menu{
