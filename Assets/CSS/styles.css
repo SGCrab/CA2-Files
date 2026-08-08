@@ -814,7 +814,7 @@ body{
 /*Testing FONT*/
 h1, h2, h3, h4, h5, h6 {
     font-family:'Rajdhani', sans-serif;
-    font-weight: 800;
+    font-weight: 1000;
     letter-spacing:1px;
 }
 .nav-bar a,
