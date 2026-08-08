@@ -72,3 +72,4 @@ function showNews(index){
     };
 
 }
+showNews(0);
