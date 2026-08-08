@@ -42,7 +42,7 @@ header{
     top:0;
     left:0;
     width:100%;
-    z-index:9999;
+    z-index:1000;
 
     background:#a00000;
     box-shadow:0 5px 15px rgba(0,0,0,.4);
@@ -173,10 +173,6 @@ header{
     outline-offset:3px;
 }
 
-header{
-    position: fixed;
-    z-index: 9999;
-}
 
 .dropdown-menu{
 
