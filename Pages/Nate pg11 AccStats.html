@@ -85,7 +85,9 @@
 
       <!-- Account Name & Line -->
       <div class="mb-5">
-        <h4 class="fw-normal mb-2">(Account Name)</h4>
+        <h4 id="accountName" class="fw-normal mb-2">
+          Account Name
+        </h4>
         <hr class="border-white opacity-75 mt-0">
       </div>
 
@@ -93,29 +95,72 @@
       <div class="stats-container">
         <!-- Rank -->
         <div class="border border-secondary rounded-pill px-4 py-2 mb-4 d-inline-block" style="background-color: #2a2a2a;">
-          <span class="fs-5">Rank: <strong style="color: #ffcccc;">Radiant</strong></span>
+          <span class="fs-5">
+              Rank:
+              <strong id="rank" style="color: #ffcccc;">
+                  Radiant
+              </strong>
+          </span>
         </div>
 
         <!-- Games Played Row -->
         <div class="d-flex flex-wrap align-items-center border border-secondary rounded-pill px-4 py-3 mb-4" style="background-color: #2a2a2a; width: fit-content;">
-          <span class="me-4 pe-4 border-end border-secondary">Games Played: <strong>342</strong></span>
-          <span class="me-4 pe-4 border-end border-secondary">Win rate: <strong>52%</strong></span>
-          <span class="me-4 pe-4 border-end border-secondary text-success">Win: <strong>178</strong></span>
-          <span class="text-danger">Lose: <strong>164</strong></span>
+          <span class="me-4 pe-4 border-end border-secondary">
+              Games Played:
+              <strong id="gamesPlayed">342</strong>
+          </span>
+          <span class="me-4 pe-4 border-end border-secondary">
+              Win rate:
+              <strong id="winRate">52%</strong>
+          </span>
+          <span class="me-4 pe-4 border-end border-secondary text-success">
+              Win:
+              <strong id="wins">178</strong>
+          </span>
+          <span class="text-danger">
+              Lose:
+              <strong id="losses">164</strong>
+          </span>
         </div>
 
         <!-- K/D Ratio Row -->
         <div class="d-flex flex-wrap align-items-center border border-secondary rounded-pill px-4 py-3 mb-5" style="background-color: #2a2a2a; width: fit-content;">
-          <span class="me-4 pe-4 border-end border-secondary">K/D ratio: <strong>1.15</strong></span>
-          <span class="me-4 pe-4 border-end border-secondary">Kills: <strong>4,210</strong></span>
-          <span class="me-4 pe-4 border-end border-secondary">Death: <strong>3,660</strong></span>
-          <span>Assists: <strong>1,850</strong></span>
+          <span class="me-4 pe-4 border-end border-secondary">
+              K/D ratio:
+              <strong id="kd">1.15</strong>
+          </span>
+
+          <span class="me-4 pe-4 border-end border-secondary">
+              Kills:
+              <strong id="kills">4,210</strong>
+          </span>
+
+          <span class="me-4 pe-4 border-end border-secondary">
+              Death:
+              <strong id="deaths">3,660</strong>
+          </span>
+
+          <span>
+              Assists:
+              <strong id="assists">1,850</strong>
+          </span>
         </div>
 
         <!-- Favorites -->
         <div class="ps-2">
-          <p class="fs-5 mb-2">(Most used weapon): <strong style="color: #ffcccc;">Vandal</strong></p>
-          <p class="fs-5">(Most played map): <strong style="color: #ffcccc;">Neo City</strong></p>
+                  <p class="fs-5 mb-2">
+            (Most used weapon):
+            <strong id="favouriteWeapon" style="color: #ffcccc;">
+                Vandal
+            </strong>
+        </p>
+
+        <p class="fs-5">
+            (Most played map):
+            <strong id="favouriteMap" style="color: #ffcccc;">
+                Neo City
+            </strong>
+        </p>
         </div>
       </div>
     </main>
