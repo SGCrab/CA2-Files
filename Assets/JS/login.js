@@ -33,7 +33,7 @@ const users = [
         deaths: "2,380",
         assists: "1,420",
         favouriteWeapon: "Phantom",
-        favouriteMap: "Haven"
+        favouriteMap: "Frost Peak"
     }
 
 ];
