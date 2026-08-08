@@ -21,7 +21,7 @@ body{
 
     padding-top:95px;
 
-    font-family:Arial,sans-serif;
+    font-family:'Rajdhani', sans-serif;
     color:white;
 
     background:
@@ -809,4 +809,16 @@ body{
 
 .character .card-img-top:hover {
     transform: scale(1.03);
+}
+/*Testing FONT*/
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    letter-spacing:1px;
+}
+.nav-bar a,
+.nav-bar button {
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    letter-spacing:0.5px;
 }
