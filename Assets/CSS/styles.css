@@ -422,15 +422,11 @@ img:hover{
    TABLES
 =========================== */
 
-table{
-
-    width:80%;
-
-    border-collapse:collapse;
-
-    margin-top: 20px;
-
-    margin: 20px auto 0 auto;
+table {
+    width: 900px;
+    max-width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
 }
 
 th,
