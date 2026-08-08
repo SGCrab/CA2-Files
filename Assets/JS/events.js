@@ -1,32 +1,32 @@
 
-const news = [
+const events = [
 
     {
         image: "../Assets/Images/Background/TejoNews.jpg",
-        title: "SEASON 2: NEW FRONTIER",
-        text: "A new season arrives with new characters, weapons, and exciting challenges.",
+        title: "GACHARANT CHAMPIONS TOUR",
+        text: "A new season, awaiting new champions of various different tournaments",
         description:
-        "Season 2 introduces new gameplay changes, exciting rewards, new challenges, and improvements to the overall player experience.",
+        "Various partnered teams take part in different tournaments, from regionals (kickoff, stage 1 and stage 2), and internationals(masters and champions)",
         link: "#"
     },
 
 
     {
         image: "../Assets/Images/Background/DoubleXP.png",
-        title: "DOUBLE XP WEEKEND",
-        text: "Earn double experience and unlock exclusive rewards this weekend.",
+        title: "GACHARANT X YBOX COLLABORATION",
+        text: "In celebration for the launch of GACHARANT, we collaborated with YBOX to make a limited edition specially designed console",
         description:
-        "Players can earn double experience points throughout the weekend event. Complete matches, level up faster, and unlock exclusive rewards.",
+        "In collaboration with YBOX, players may purchase a specially designed game console based on GACHARANT. Players who purchase it may claim a free gift along with it.",
         link: "#"
     },
 
 
     {
         image: "../Assets/Images/Maps/Lotus.jpg",
-        title: "NEW MAP REVEALED",
-        text: "Explore our newest battlefield with hidden paths and exciting objectives.",
+        title: "GACHARANT POPUP IN SP",
+        text: "GACHARANT is coming to SP with many activities",
         description:
-        "The newest battlefield introduces unique layouts, hidden routes, and new strategic opportunities for players to discover.",
+        "Players can attend the event and complete activities for prizes. There is alsoo a merch section where players can purchase the exclusive merch from GACHARANT.",
         link: "#"
     },
 
@@ -52,24 +52,24 @@ const news = [
 
 ];
 
-function showNews(index){
-    document.getElementById("newsImage").src = news[index].image;
-    document.getElementById("newsTitle").textContent = news[index].title;
-    document.getElementById("newsText").textContent = news[index].text;
-    document.getElementById("newsLink").onclick = function(){
+function showEvents(index){
+    document.getElementById("eventsImage").src = events[index].image;
+    document.getElementById("eventsTitle").textContent = events[index].title;
+    document.getElementById("eventsText").textContent = events[index].text;
+    document.getElementById("eventsLink").onclick = function(){
 
         document.getElementById("modalTitle").textContent =
-        news[index].title;
+        events[index].title;
 
 
         document.getElementById("modalImage").src =
-        news[index].image;
+        events[index].image;
 
 
         document.getElementById("modalText").textContent =
-        news[index].description;
+        events[index].description;
 
     };
 
 }
-showNews(0);
+showEvents(0);
