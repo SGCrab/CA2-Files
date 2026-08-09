@@ -837,7 +837,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Scoped only to the support page */
 .support-page textarea#promoCode {
-  width: 300px;      /* narrower */
+  width: 900px;      /* narrower */
   height: 150px;     /* taller */
   resize: none;      /* optional: prevent manual resizing */
   padding: 10px;     /* adds inner spacing */
