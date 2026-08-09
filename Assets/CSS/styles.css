@@ -835,9 +835,11 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
-#form-label_fs-7{
-width: 300px;   /* controls how wide the box is */
-  height: 200px;  /* controls how tall the box is */
-  resize: none;   /* optional: prevents manual resizing */
-
+/* Scoped only to the support page */
+.support-page .form-control#promoCode {
+  width: 300px;      /* narrower */
+  height: 150px;     /* taller */
+  resize: none;      /* optional: prevent manual resizing */
+  padding: 10px;     /* adds inner spacing */
+  box-sizing: border-box; /* keeps size consistent */
 }
