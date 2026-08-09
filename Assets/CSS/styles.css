@@ -844,9 +844,4 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box; /* keeps size consistent */
 }
 
-.support-page {
-  display: flex;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
-  height: 100vh;           /* full viewport height */
-}
+
