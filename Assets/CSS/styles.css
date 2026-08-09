@@ -844,4 +844,16 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box; /* keeps size consistent */
 }
 
+.support-page button#submitBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
+.support-page {
+  display: flex;
+  flex-direction: column;   /* stack textarea and button vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically if you set height */
+  height: 100vh;            /* optional: full viewport height */
+}
