@@ -842,4 +842,5 @@ h1, h2, h3, h4, h5, h6 {
   resize: none;      /* optional: prevent manual resizing */
   padding: 10px;     /* adds inner spacing */
   box-sizing: border-box; /* keeps size consistent */
+  justify-content: center;
 }
