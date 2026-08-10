@@ -22,7 +22,7 @@ const events = [
 
 
     {
-        image: "../Assets/Images/Maps/SP.jpg",
+        image: "../Assets/Images/Background/SP.jpg",
         title: "GACHARANT POPUP IN SP",
         text: "GACHARANT is coming to SP with many activities",
         description:
