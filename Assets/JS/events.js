@@ -2,7 +2,7 @@
 const events = [
 
     {
-        image: "../Assets/Images/Background/TejoNews.jpg",
+        image: "../Assets/Images/Background/GCT.jpg",
         title: "GACHARANT CHAMPIONS TOUR",
         text: "A new season, awaiting new champions of various different tournaments",
         description:
@@ -22,7 +22,7 @@ const events = [
 
 
     {
-        image: "../Assets/Images/Maps/Lotus.jpg",
+        image: "../Assets/Images/Maps/SP.jpg",
         title: "GACHARANT POPUP IN SP",
         text: "GACHARANT is coming to SP with many activities",
         description:
@@ -33,20 +33,20 @@ const events = [
 
     {
         image: "../Assets/Images/Gameplay/gameplay4.jpg",
-        title: "NEW PATCH UPDATE",
-        text: "Bug fixes, patches and glitches fixed in the newest snapshot 123T.",
+        title: "Road2GACHARANT Event",
+        text: "A new progressive event for free rewards",
         description:
-        "This update focuses on improving game stability, fixing reported bugs, and enhancing the overall gameplay experience.",
+        "To celebrate the release of GACHARANT, playeres can play through this event and accumulate XP to earn free rewards such as cosmetics and in-game currency",
         link: "#"
     },
 
 
     {
         image: "../Assets/Images/Gameplay/gameplay3.png",
-        title: "E-Sport Pro's tips and tricks",
-        text: "Learn new skills, brought to you by world no. 1 Gacharant play Penz.",
+        title: "Premier queues open for players",
+        text: "A limited-time gamemode, premier, is open",
         description:
-        "Professional players share advanced strategies, aiming techniques, and useful tips to help players improve their gameplay.",
+        "Premier is a tournament based gamemode, where players get to come together and make teams. They will play against other teams from the same region, going through the bracket. The winners will receive an exclusive gun skin",
         link: "#"
     }
 
