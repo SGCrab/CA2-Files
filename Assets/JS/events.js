@@ -43,10 +43,10 @@ const events = [
 
     {
         image: "../Assets/Images/Gameplay/gameplay3.png",
-        title: "Premier queues open for players",
-        text: "A limited-time gamemode, premier, is open",
+        title: "Ticket sales open for Masters Singapore",
+        text: "Players may now secure their seats for GACHARANT'S first tournament",
         description:
-        "Premier is a tournament based gamemode, where players get to come together and make teams. They will play against other teams from the same region, going through the bracket. The winners will receive an exclusive gun skin",
+        "Masters, one of the tournaments from GACHARANTs tournament schedule, is here! Tickets are now available for players who are interested to attend to purchase. Secure your ticket now while stocks last!",
         link: "#"
     }
 
