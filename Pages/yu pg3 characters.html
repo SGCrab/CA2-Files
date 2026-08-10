@@ -1,409 +1,375 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agents - GACHARANT</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Assets/CSS/styles.css" />
     <script src="../Assets/JS/navigation.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+      <ul class="nav-bar">
+        <li>
+          <a href="../index.html">
+            <img
+              src="../Assets/Images/Logo/Logo.png"
+              alt="GACHARANT Logo"
+              class="nav-logo"
+            />
+          </a>
+        </li>
 
-<!-- ================= NAVIGATION ================= -->
-<header>
+        <li><a href="../index.html">Home</a></li>
 
-<ul class="nav-bar">
+        <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
 
-    <li>
-        <a href="../index.html">
-            <img src="../Assets/Images/Logo/Logo.png"
-                 alt="GACHARANT Logo"
-                 class="nav-logo">
-        </a>
-    </li>
+        <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
 
-    <li><a href="../index.html">Home</a></li>
-
-    <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
-
-    <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
-
-    <!-- Support -->
-    <li class="ms-2">
-        <div class="dropdown">
-            <button class="login btn dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown">
-                Support
+        <!-- Support -->
+        <li class="ms-2">
+          <div class="dropdown">
+            <button
+              class="login btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Support
             </button>
 
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item "
-                    href="../Pages/josh pg8 specs.html">PC Specs</a></li>
+              <li>
+                <a class="dropdown-item" href="../Pages/josh pg8 specs.html"
+                  >PC Specs</a
+                >
+              </li>
 
-                <li><a class="dropdown-item "
-                    href="../Pages/josh pg 9 support.html">Game Support</a></li>
+              <li>
+                <a class="dropdown-item" href="../Pages/josh pg 9 support.html"
+                  >Game Support</a
+                >
+              </li>
             </ul>
-        </div>
-    </li>
+          </div>
+        </li>
 
-    <!-- Socials -->
-    <li class="ms-2">
-        <div class="dropdown">
-            <button class="login btn dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown">
-                Socials
+        <!-- Socials -->
+        <li class="ms-2">
+          <div class="dropdown">
+            <button
+              class="login btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Socials
             </button>
 
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item " href="#">X</a></li>
-                <li><a class="dropdown-item " href="#">Instagram</a></li>
+              <li><a class="dropdown-item" href="#">X</a></li>
+              <li><a class="dropdown-item" href="#">Instagram</a></li>
             </ul>
-        </div>
-    </li>
+          </div>
+        </li>
 
-    <!-- News -->
-    <li class="ms-2">
-        <div class="dropdown">
-            <button class="login btn dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown">
-                News
+        <!-- News -->
+        <li class="ms-2">
+          <div class="dropdown">
+            <button
+              class="login btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              News
             </button>
 
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item "
-                    href="../Pages/eth pg6 news.html">Updates</a></li>
+              <li>
+                <a class="dropdown-item" href="../Pages/eth pg6 news.html"
+                  >Updates</a
+                >
+              </li>
 
-                <li><a class="dropdown-item "
-                    href="../Pages/josh pg7 events.html">Events</a></li>
+              <li>
+                <a class="dropdown-item" href="../Pages/josh pg7 events.html"
+                  >Events</a
+                >
+              </li>
             </ul>
-        </div>
-    </li>
+          </div>
+        </li>
 
-    <!-- Login -->
-      <!-- Login Dropdown Button -->
+        <!-- Login -->
+        <!-- Login Dropdown Button -->
         <li class="ms-2">
           <div id="loginArea">
             <button
               id="loginBtn"
               class="login btn"
               data-bs-toggle="modal"
-              data-bs-target="#loginModal">
-
+              data-bs-target="#loginModal"
+            >
               Login
-
             </button>
           </div>
         </li>
-
-</ul>
-
-</header>
-
-<!-- ================= MAIN CONTENT ================= -->
-
-<main>
-
-<section class="content-page">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<h1 class="display-3 fw-bold">
-AGENTS
-</h1>
-
-<p class="lead text-light">
-Choose your favourite GachaRant character and discover their unique abilities.
-</p>
-
-<hr class="w-25 mx-auto border-danger border-3">
-
-</div>
-
-<!-- Filter Buttons -->
-
-<div class="text-center mb-4">
-
-<button class="btn btn-danger filter-btn" data-filter="all">
-    All
-</button>
-
-<button class="btn btn-outline-danger filter-btn" data-filter="Duelist">
-    Duelist
-</button>
-
-<button class="btn btn-outline-danger filter-btn" data-filter="Controller">
-    Controller
-</button>
-
-<button class="btn btn-outline-danger filter-btn" data-filter="Sentinel">
-    Sentinel
-</button>
-
-</div>
-
-<div class="row g-4">
-
-<!-- Character 1 -->
-
-<div class="col-md-4 character" data-category="Duelist">
-
-<div class="card h-100">
-
-<img src="../Assets/Images/Characters/Phoenix.png" class="card-img-top">
-
-<div class="card-body">
-
-<h4>Blaze</h4>
-
-<p><strong>Health:</strong> 100</p>
-
-<p><strong>Abilities:</strong></p>
-
-<ul>
-<li>Flash Dash</li>
-<li>Fire Grenade</li>
-<li>Ultimate: Inferno Storm</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Character 2 -->
-
-<div class="col-md-4 character" data-category="Controller">
-
-<div class="card h-100">
-
-<img src="../Assets/Images/Characters/Spartan.png" class="card-img-top">
-
-<div class="card-body">
-
-<h4>Spartan Noble 6</h4>
-
-<p><strong>Health:</strong> 150</p>
-
-<p><strong>Abilities:</strong></p>
-
-<ul>
-<li>Frag Grenade</li>
-<li>Energy Shield</li>
-<li>Ultimate: Nuclear Bomb</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Character 3 -->
-
-<div class="col-md-4 character" data-category="Duelist">
-
-<div class="card h-100">
-
-<img src="../Assets/Images/Characters/doomslayer.png" class="card-img-top">
-
-<div class="card-body">
-
-<h4>The DOOM Slayer</h4>
-
-<p><strong>Health:</strong> 150</p>
-
-<p><strong>Abilities:</strong></p>
-
-<ul>
-<li>Super Punch</li>
-<li>Speed Dodge</li>
-<li>Ultimate: Chainsaw</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Character 4 -->
-
-<div class="col-md-4 character" data-category="Sentinel">
-
-<div class="card h-100">
-
-<img src="../Assets/Images/Characters/MightyEagle.png" class="card-img-top">
-
-<div class="card-body">
-
-<h4>Mighty Eagle</h4>
-
-<p><strong>Health:</strong> 200</p>
-
-<p><strong>Abilities:</strong></p>
-
-<ul>
-<li>Bird Shet</li>
-<li>Flight</li>
-<li>Ultimate: Eggplosion</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Character 5 -->
-
-<div class="col-md-4 character" data-category="Sentinel">
-
-<div class="card h-100">
-
-<img src="../Assets/Images/Characters/Gang of Geniuses.jpg" class="card-img-top">
-
-<div class="card-body">
-
-<h4>Gang of Geniuses</h4>
-
-<p><strong>Health:</strong> 300</p>
-
-<p><strong>Abilities:</strong></p>
-
-<ul>
-<li>Body Slam</li>
-<li>Fluffy Bomb</li>
-<li>Ultimate: Let it Rain</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Character 6 -->
-
-<div class="col-md-4 character" data-category="Controller">
-
-<div class="card h-100">
-
-<img src="../Assets/Images/Characters/Cinnamon.png" class="card-img-top">
-
-<div class="card-body">
-
-<h4>Frost</h4>
-
-<p><strong>Health:</strong> 100</p>
-
-<p><strong>Abilities:</strong></p>
-
-<ul>
-<li>Ice Wall</li>
-<li>Slow Field</li>
-<li>Ultimate: Blizzard</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-    Microslop Game Studios © 2026
-</footer>
-
-  <!-- Login Modal -->
-<div class="modal fade" id="loginModal">
-
-    <div class="modal-dialog">
-
-        <div class="modal-content bg-dark text-white">
-
-            <div class="modal-header">
-
-                <h4 class="modal-title">
-
-                    Login
-
-                </h4>
-
-                <button
-                    class="btn-close btn-close-white"
-                    data-bs-dismiss="modal">
-                </button>
-
+      </ul>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+      <section class="content-page">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h1 class="display-3 fw-bold">AGENTS</h1>
+
+            <p class="lead text-light">
+              Choose your favourite GachaRant character and discover their
+              unique abilities.
+            </p>
+
+            <hr class="w-25 mx-auto border-danger border-3" />
+          </div>
+
+          <!-- Filter Buttons -->
+
+          <div class="text-center mb-4">
+            <button class="btn btn-danger filter-btn" data-filter="all">
+              All
+            </button>
+
+            <button
+              class="btn btn-outline-danger filter-btn"
+              data-filter="Duelist"
+            >
+              Duelist
+            </button>
+
+            <button
+              class="btn btn-outline-danger filter-btn"
+              data-filter="Controller"
+            >
+              Controller
+            </button>
+
+            <button
+              class="btn btn-outline-danger filter-btn"
+              data-filter="Sentinel"
+            >
+              Sentinel
+            </button>
+          </div>
+
+          <div class="row g-4">
+            <!-- Character 1 -->
+
+            <div class="col-md-4 character" data-category="Duelist">
+              <div class="card h-100">
+                <img
+                  src="../Assets/Images/Characters/Phoenix.png"
+                  class="card-img-top"
+                />
+
+                <div class="card-body">
+                  <h4>Blaze</h4>
+
+                  <p><strong>Health:</strong> 100</p>
+
+                  <p><strong>Abilities:</strong></p>
+
+                  <ul>
+                    <li>Flash Dash</li>
+                    <li>Fire Grenade</li>
+                    <li>Ultimate: Inferno Storm</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="modal-body">
+            <!-- Character 2 -->
 
-                <label>Email</label>
+            <div class="col-md-4 character" data-category="Controller">
+              <div class="card h-100">
+                <img
+                  src="../Assets/Images/Characters/Spartan.png"
+                  class="card-img-top"
+                />
 
-                <input
-                    type="email"
-                    id="email"
-                    class="form-control mb-3">
+                <div class="card-body">
+                  <h4>Spartan Noble 6</h4>
 
-                <label>Password</label>
+                  <p><strong>Health:</strong> 150</p>
 
-                <input
-                    type="password"
-                    id="password"
-                    class="form-control mb-3">
+                  <p><strong>Abilities:</strong></p>
 
-                <p id="loginMessage"></p>
-
+                  <ul>
+                    <li>Frag Grenade</li>
+                    <li>Energy Shield</li>
+                    <li>Ultimate: Nuclear Bomb</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="modal-footer">
+            <!-- Character 3 -->
 
-                <button
-                    class="btn btn-danger"
-                    id="loginSubmit">
+            <div class="col-md-4 character" data-category="Duelist">
+              <div class="card h-100">
+                <img
+                  src="../Assets/Images/Characters/doomslayer.png"
+                  class="card-img-top"
+                />
 
-                    Login
+                <div class="card-body">
+                  <h4>The DOOM Slayer</h4>
 
-                </button>
+                  <p><strong>Health:</strong> 150</p>
 
+                  <p><strong>Abilities:</strong></p>
+
+                  <ul>
+                    <li>Super Punch</li>
+                    <li>Speed Dodge</li>
+                    <li>Ultimate: Chainsaw</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
+            <!-- Character 4 -->
+
+            <div class="col-md-4 character" data-category="Sentinel">
+              <div class="card h-100">
+                <img
+                  src="../Assets/Images/Characters/MightyEagle.png"
+                  class="card-img-top"
+                />
+
+                <div class="card-body">
+                  <h4>Mighty Eagle</h4>
+
+                  <p><strong>Health:</strong> 200</p>
+
+                  <p><strong>Abilities:</strong></p>
+
+                  <ul>
+                    <li>Bird Shet</li>
+                    <li>Flight</li>
+                    <li>Ultimate: Eggplosion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Character 5 -->
+
+            <div class="col-md-4 character" data-category="Sentinel">
+              <div class="card h-100">
+                <img
+                  src="../Assets/Images/Characters/Gang of Geniuses.jpg"
+                  class="card-img-top"
+                />
+
+                <div class="card-body">
+                  <h4>Gang of Geniuses</h4>
+
+                  <p><strong>Health:</strong> 300</p>
+
+                  <p><strong>Abilities:</strong></p>
+
+                  <ul>
+                    <li>Body Slam</li>
+                    <li>Fluffy Bomb</li>
+                    <li>Ultimate: Let it Rain</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Character 6 -->
+
+            <div class="col-md-4 character" data-category="Controller">
+              <div class="card h-100">
+                <img
+                  src="../Assets/Images/Characters/Cinnamon.png"
+                  class="card-img-top"
+                />
+
+                <div class="card-body">
+                  <h4>Frost</h4>
+
+                  <p><strong>Health:</strong> 100</p>
+
+                  <p><strong>Abilities:</strong></p>
+
+                  <ul>
+                    <li>Ice Wall</li>
+                    <li>Slow Field</li>
+                    <li>Ultimate: Blizzard</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
+    <!-- ================= FOOTER ================= -->
+
+    <footer>Microslop Game Studios © 2026</footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <label>Email</label>
+
+            <input type="email" id="email" class="form-control mb-3" />
+
+            <label>Password</label>
+
+            <input type="password" id="password" class="form-control mb-3" />
+
+            <p id="loginMessage"></p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-danger" id="loginSubmit">Login</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-</div>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!---Login Javascript-->
+    <script src="../Assets/JS/login.js"></script>
 
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!---Login Javascript-->
-<script src="../Assets/JS/login.js"></script>
-
-<!-- Agent Filter -->
-<script src="../Assets/JS/agentFilter.js"></script>
-
-
-</body>
+    <!-- Agent Filter -->
+    <script src="../Assets/JS/agentFilter.js"></script>
+  </body>
 </html>

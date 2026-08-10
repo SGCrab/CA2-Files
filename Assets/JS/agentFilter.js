@@ -1,40 +1,29 @@
 // Agent Filter
 
 document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const characters = document.querySelectorAll(".character");
 
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const characters = document.querySelectorAll(".character");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Change button styles
+      filterButtons.forEach((btn) => {
+        btn.classList.remove("btn-danger");
+        btn.classList.add("btn-outline-danger");
+      });
 
-    filterButtons.forEach(button => {
+      button.classList.remove("btn-outline-danger");
+      button.classList.add("btn-danger");
 
-        button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
 
-            // Change button styles
-            filterButtons.forEach(btn => {
-                btn.classList.remove("btn-danger");
-                btn.classList.add("btn-outline-danger");
-            });
-
-            button.classList.remove("btn-outline-danger");
-            button.classList.add("btn-danger");
-
-            const filter = button.dataset.filter;
-
-            characters.forEach(character => {
-
-                if (
-                    filter === "all" ||
-                    character.dataset.category === filter
-                ) {
-                    character.classList.remove("d-none");
-                } else {
-                    character.classList.add("d-none");
-                }
-
-            });
-
-        });
-
+      characters.forEach((character) => {
+        if (filter === "all" || character.dataset.category === filter) {
+          character.classList.remove("d-none");
+        } else {
+          character.classList.add("d-none");
+        }
+      });
     });
-
+  });
 });

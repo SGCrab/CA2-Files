@@ -1,259 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Info</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Assets/CSS/styles.css" />
     <script src="../Assets/JS/navigation.js" defer></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation Bar -->
     <header>
-        <ul class="nav-bar">
+      <ul class="nav-bar">
+        <!-- Logo -->
+        <li>
+          <a href="../index.html">
+            <img
+              src="../Assets/Images/Logo/Logo.png"
+              alt="GACHARANT Logo"
+              class="nav-logo"
+            />
+          </a>
+        </li>
 
-            <!-- Logo -->
-            <li>
-                <a href="../index.html">
-                    <img src="../Assets/Images/Logo/Logo.png"
-                         alt="GACHARANT Logo"
-                         class="nav-logo">
-                </a>
-            </li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
+        <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
 
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../Pages/eth pg2 gameinfo.html">Game Info</a></li>
-            <li><a href="../Pages/Nate pg12 AboutUs.html">About Us</a></li>
+        <!-- Support -->
+        <li class="ms-2">
+          <div class="dropdown">
+            <button
+              class="login btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Support
+            </button>
 
-            <!-- Support -->
-            <li class="ms-2">
-                <div class="dropdown">
-                    <button class="login btn dropdown-toggle"
-                            type="button"
-                            data-bs-toggle="dropdown">
-                        Support
-                    </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../Pages/josh pg8 specs.html"
+                  >PC Specs</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Pages/josh pg 9 support.html"
+                  >Game Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item " href="../Pages/josh pg8 specs.html">PC Specs</a></li>
-                        <li><a class="dropdown-item " href="../Pages/josh pg 9 support.html">Game Support</a></li>
-                    </ul>
-                </div>
-            </li>
+        <!-- Socials -->
+        <li class="ms-2">
+          <div class="dropdown">
+            <button
+              class="login btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Socials
+            </button>
 
-            <!-- Socials -->
-            <li class="ms-2">
-                <div class="dropdown">
-                    <button class="login btn dropdown-toggle"
-                            type="button"
-                            data-bs-toggle="dropdown">
-                        Socials
-                    </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="../Pages/Nate pg10 Code Redeem.html"
+                  >X</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="../Pages/Nate pg10 Code Redeem.html"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item " href="../Pages/Nate pg10 Code Redeem.html">X</a></li>
-                        <li><a class="dropdown-item " href="../Pages/Nate pg10 Code Redeem.html">Instagram</a></li>
-                    </ul>
-                </div>
-            </li>
+        <!-- News -->
+        <li class="ms-2">
+          <div class="dropdown">
+            <button
+              class="login btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              News
+            </button>
 
-            <!-- News -->
-            <li class="ms-2">
-                <div class="dropdown">
-                    <button class="login btn dropdown-toggle"
-                            type="button"
-                            data-bs-toggle="dropdown">
-                        News
-                    </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../Pages/eth pg6 news.html"
+                  >Updates</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Pages/josh pg7 events.html"
+                  >Events</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item " href="../Pages/eth pg6 news.html">Updates</a></li>
-                        <li><a class="dropdown-item " href="../Pages/josh pg7 events.html">Events</a></li>
-                    </ul>
-                </div>
-            </li>
-
-            <!-- Login -->
-            <li class="ms-2">
-                <div id="loginArea">
-                    <button
-                        id="loginBtn"
-                        class="login btn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#loginModal">
-
-                        Login
-
-                    </button>
-                </div>
-            </li>
-
-        </ul>
+        <!-- Login -->
+        <li class="ms-2">
+          <div id="loginArea">
+            <button
+              id="loginBtn"
+              class="login btn"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+          </div>
+        </li>
+      </ul>
     </header>
 
     <!-- Page Title -->
     <section>
+      <div class="container text-center mt-5 pt-4">
+        <h1>GACHARANT</h1>
+      </div>
 
-        <div class="container text-center mt-5 pt-4">
-            <h1>GACHARANT</h1>
+      <div class="container my-5">
+        <div class="row justify-content-center g-4">
+          <!-- Characters -->
+          <div class="col-md-4 d-flex">
+            <a
+              href="../Pages/yu pg3 characters.html"
+              class="text-decoration-none text-light d-block w-100"
+            >
+              <div class="border game-card h-100">
+                <div
+                  class="game-card-media d-flex align-items-center justify-content-center border-bottom bg-dark"
+                >
+                  <img
+                    src="../Assets/Images/Characters/Cinnamon.png"
+                    alt="Character"
+                    class="card-img"
+                  />
+                </div>
+
+                <div class="text-center bg-dark p-3 card-content">
+                  <h5>Characters</h5>
+                  <p>Dominate the battlefield, choose your character.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Weapons -->
+          <div class="col-md-4 d-flex">
+            <a
+              href="../Pages/yu pg5 weapons.html"
+              class="text-decoration-none text-light d-block w-100"
+            >
+              <div class="border game-card h-100">
+                <div
+                  class="game-card-media d-flex align-items-center justify-content-center border-bottom bg-dark"
+                >
+                  <img
+                    src="../Assets/Images/Weapons/OniPhantom.jpg"
+                    alt="Weapons"
+                    class="card-img"
+                  />
+                </div>
+
+                <div class="text-center bg-dark p-3 card-content">
+                  <h5>Weapons</h5>
+                  <p>Need a weapon?.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Maps -->
+          <div class="col-md-4 d-flex">
+            <a
+              href="../Pages/yu pg4 maps.html"
+              class="text-decoration-none text-light d-block w-100"
+            >
+              <div class="border game-card h-100">
+                <div
+                  class="game-card-media d-flex align-items-center justify-content-center border-bottom bg-dark"
+                >
+                  <img
+                    src="../Assets/Images/Maps/Halo map.webp"
+                    alt="Maps"
+                    class="card-img"
+                  />
+                </div>
+
+                <div class="text-center bg-dark p-3 card-content">
+                  <h5>Maps</h5>
+                  <p>Battle it out in newly and uniquely designed maps.</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-
-        <div class="container my-5">
-            <div class="row justify-content-center g-4">
-
-                <!-- Characters -->
-                <div class="col-md-4 d-flex">
-                    <a href="../Pages/yu pg3 characters.html"
-                       class="text-decoration-none text-light d-block w-100">
-
-                        <div class="border game-card h-100">
-
-                            <div class="game-card-media d-flex align-items-center justify-content-center border-bottom bg-dark">
-
-                                <img src="../Assets/Images/Characters/Cinnamon.png"
-                                     alt="Character"
-                                     class="card-img">
-
-                            </div>
-
-                            <div class="text-center bg-dark p-3 card-content">
-                                <h5>Characters</h5>
-                                <p>Dominate the battlefield, choose your character.</p>
-                            </div>
-
-                        </div>
-
-                    </a>
-                </div>
-
-                <!-- Weapons -->
-                <div class="col-md-4 d-flex">
-                    <a href="../Pages/yu pg5 weapons.html"
-                       class="text-decoration-none text-light d-block w-100">
-
-                        <div class="border game-card h-100">
-
-                            <div class="game-card-media d-flex align-items-center justify-content-center border-bottom bg-dark">
-
-                                <img src="../Assets/Images/Weapons/OniPhantom.jpg"
-                                     alt="Weapons"
-                                     class="card-img">
-
-                            </div>
-
-                            <div class="text-center bg-dark p-3 card-content">
-                                <h5>Weapons</h5>
-                                <p>Need a weapon?.</p>
-                            </div>
-
-                        </div>
-
-                    </a>
-                </div>
-
-                <!-- Maps -->
-                <div class="col-md-4 d-flex">
-                    <a href="../Pages/yu pg4 maps.html"
-                       class="text-decoration-none text-light d-block w-100">
-
-                        <div class="border game-card h-100">
-
-                            <div class="game-card-media d-flex align-items-center justify-content-center border-bottom bg-dark">
-
-                                <img src="../Assets/Images/Maps/Halo map.webp"
-                                     alt="Maps"
-                                     class="card-img">
-
-                            </div>
-
-                            <div class="text-center bg-dark p-3 card-content">
-                                <h5>Maps</h5>
-                                <p>Battle it out in newly and uniquely designed maps.</p>
-                            </div>
-
-                        </div>
-
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        Microslop Game Studios © 2026
-    </footer>
+    <footer class="footer">Microslop Game Studios © 2026</footer>
 
-  <!-- Login Modal -->
-<div class="modal fade" id="loginModal">
-
-    <div class="modal-dialog">
-
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal">
+      <div class="modal-dialog">
         <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
 
-            <div class="modal-header">
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
 
-                <h4 class="modal-title">
+          <div class="modal-body">
+            <label>Email</label>
 
-                    Login
+            <input type="email" id="email" class="form-control mb-3" />
 
-                </h4>
+            <label>Password</label>
 
-                <button
-                    class="btn-close btn-close-white"
-                    data-bs-dismiss="modal">
-                </button>
+            <input type="password" id="password" class="form-control mb-3" />
 
-            </div>
+            <p id="loginMessage"></p>
+          </div>
 
-            <div class="modal-body">
-
-                <label>Email</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    class="form-control mb-3">
-
-                <label>Password</label>
-
-                <input
-                    type="password"
-                    id="password"
-                    class="form-control mb-3">
-
-                <p id="loginMessage"></p>
-
-            </div>
-
-            <div class="modal-footer">
-
-                <button
-                    class="btn btn-danger"
-                    id="loginSubmit">
-
-                    Login
-
-                </button>
-
-            </div>
-
+          <div class="modal-footer">
+            <button class="btn btn-danger" id="loginSubmit">Login</button>
+          </div>
         </div>
-
+      </div>
     </div>
-
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../Assets/JS/login.js"></script>
-</body>
+  </body>
 </html>
