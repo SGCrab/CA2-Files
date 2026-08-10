@@ -46,7 +46,7 @@ const events = [
         title: "Ticket sales open for Masters Singapore",
         text: "Players may now secure their seats for GACHARANT's first tournament",
         description:
-        "Masters, one of the tournaments from GACHARANTs tournament schedule, is here! Tickets are now available for players who are interested to attend to purchase. Secure your ticket now while stocks last!",
+        "Masters, one of the tournaments from GACHARANT's tournament schedule, is here! Tickets are now available for players who are interested to attend to purchase. Secure your ticket now while stocks last!",
         link: "#"
     }
 
