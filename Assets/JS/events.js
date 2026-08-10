@@ -12,7 +12,7 @@ const events = [
 
 
     {
-        image: "../Assets/Images/Background/DoubleXP.png",
+        image: "../Assets/Images/Background/steammachinecontroller.jpg",
         title: "GACHARANT X YBOX COLLABORATION",
         text: "In celebration for the launch of GACHARANT, we collaborated with YBOX to make a limited edition specially designed console",
         description:
