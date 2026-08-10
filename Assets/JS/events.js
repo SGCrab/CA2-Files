@@ -42,7 +42,7 @@ const events = [
 
 
     {
-        image: "../Assets/Images/Gameplay/gameplay3.png",
+        image: "../Assets/Images/Background/GCT.jpg",
         title: "Ticket sales open for Masters Singapore",
         text: "Players may now secure their seats for GACHARANT'S first tournament",
         description:
