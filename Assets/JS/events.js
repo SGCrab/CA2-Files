@@ -36,7 +36,7 @@ const events = [
         title: "Road2GACHARANT Event",
         text: "A new progressive event for free rewards",
         description:
-        "To celebrate the release of GACHARANT, playeres can play through this event and accumulate XP to earn free rewards such as cosmetics and in-game currency",
+        "To celebrate the release of GACHARANT, players can play through this event and accumulate XP to earn free rewards such as cosmetics and in-game currency",
         link: "#"
     },
 
@@ -44,7 +44,7 @@ const events = [
     {
         image: "../Assets/Images/Background/GCT.jpg",
         title: "Ticket sales open for Masters Singapore",
-        text: "Players may now secure their seats for GACHARANT'S first tournament",
+        text: "Players may now secure their seats for GACHARANT's first tournament",
         description:
         "Masters, one of the tournaments from GACHARANTs tournament schedule, is here! Tickets are now available for players who are interested to attend to purchase. Secure your ticket now while stocks last!",
         link: "#"
