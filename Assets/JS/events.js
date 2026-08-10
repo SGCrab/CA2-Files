@@ -32,7 +32,7 @@ const events = [
 
 
     {
-        image: "../Assets/Images/Gameplay/gameplay4.jpg",
+        image: "../Assets/Images/Background/r2val.png",
         title: "Road2GACHARANT Event",
         text: "A new progressive event for free rewards",
         description:
