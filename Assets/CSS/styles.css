@@ -857,5 +857,5 @@ h1, h2, h3, h4, h5, h6 {
 .support-page {
   display: flex;
   flex-direction: column;   /* stack textarea and button vertically */
-  align-items: center;      /* center horizontally */
+
 }
