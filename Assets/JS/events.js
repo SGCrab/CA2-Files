@@ -2,7 +2,7 @@
 const events = [
 
     {
-        image: "../Assets/Images/Background/GCT.jpg",
+        image: "../Assets/Images/Background/VCT.jpg",
         title: "GACHARANT CHAMPIONS TOUR",
         text: "A new season, awaiting new champions of various different tournaments",
         description:
